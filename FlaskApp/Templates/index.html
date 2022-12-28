@@ -1,0 +1,23 @@
+<html>
+<head>
+
+</head>
+<body>
+<a href="/speech"><input type="button" value="speak"></a>
+
+<a href="/compile"><input type="button" value="compile"></a>
+
+<form class="grid" action="/result" method="post">
+    <center>
+        {%if name%}
+        <h3 style="color : blue;">Hello {{name}},How are you</h3>
+        {% endif %}
+    </center>
+    <label for="Name">Enter your name</label>
+    <input type="text" name="name" id="name">
+
+    <center><input type="Submit" class="file_submit"></center>
+</form>
+</body>
+
+</html>
